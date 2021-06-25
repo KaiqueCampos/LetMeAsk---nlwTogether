@@ -4,6 +4,7 @@ import { AdminRoom } from './pages/AdminRoom';
 import { Home } from './pages/Home';
 import { NewRoom } from './pages/NewRoom';
 import { Room } from './pages/Room';
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/rooms/:id" component={Room} />
           <Route path="/admin/rooms/:id" component={AdminRoom} />
         </Switch>
+        <ToastContainer />
       </AuthContextProviderProps>
     </BrowserRouter>
   );

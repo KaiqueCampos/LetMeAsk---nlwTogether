@@ -1,5 +1,6 @@
 import copyImg from '../../assets/images/copy.svg';
 import './styles.scss'
+import { sucessNotification } from '../../utils/toastNotification'
 
 type RoomCodeProps = {
     code: string
@@ -9,6 +10,7 @@ export function RoomCode(props: RoomCodeProps) {
 
     function copyRoomCodeToClipBoard() {
         navigator.clipboard.writeText(props.code)
+        sucessNotification("Copy")
     }
 
     return (

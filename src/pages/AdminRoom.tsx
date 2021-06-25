@@ -1,20 +1,15 @@
-import { FormEvent, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
-
-import logoImg from '../assets/images/logo.svg';
-import deleteImg from '../assets/images/delete.svg';
-import checkImg from '../assets/images/check.svg';
 import answerImg from '../assets/images/answer.svg';
-
-
+import checkImg from '../assets/images/check.svg';
+import deleteImg from '../assets/images/delete.svg';
+import logoImg from '../assets/images/logo.svg';
 import { Button } from '../components/Button/button';
 import { Question } from '../components/Question/question';
 import { RoomCode } from '../components/RoomCode/roomCode';
-import { useAuth } from '../hooks/useAuth';
 import { useRoom } from '../hooks/useRoom';
 import { database } from '../services/firebase';
-
 import '../styles/room.scss';
+import { sucessNotification } from '../utils/toastNotification';
 
 type RoomParams = {
     id: string,
@@ -33,12 +28,14 @@ export function AdminRoom() {
             endedAt: new Date(),
         })
 
+        sucessNotification(`Room was finished on ${new Date().toLocaleString()}`)
         history.push('/')
     }
 
     async function handleDeleteQuestion(questionId: string) {
         if (window.confirm('Tem certeza que deseja deletar essa pergunta?')) {
             await database.ref(`rooms/${roomId}/questions/${questionId}`).remove()
+            sucessNotification('Question was deleted successfully!')
         }
     }
 

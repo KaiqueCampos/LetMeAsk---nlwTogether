@@ -8,6 +8,7 @@ import { useAuth } from '../hooks/useAuth';
 import { useRoom } from '../hooks/useRoom';
 import { database } from '../services/firebase';
 import '../styles/room.scss';
+import { errorNotification, sucessNotification, warningNotification } from '../utils/toastNotification';
 
 
 type RoomParams = {
@@ -27,6 +28,7 @@ export function Room() {
 
         // Check 
         if (newQuestion.trim() === '') {
+            warningNotification("Question has empty")
             return;
         }
 
@@ -49,8 +51,10 @@ export function Room() {
         await database.ref(`rooms/${roomId}/questions`).push(question);
 
         // Clear textarea
+        sucessNotification("your question has been sent")
         setNewQuestion('')
     }
+
 
     async function handleLikeQuestion(questionId: string, likeId: string | undefined) {
         if (likeId) {

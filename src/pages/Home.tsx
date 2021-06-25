@@ -7,14 +7,14 @@ import logoImg from '../assets/images/logo.svg'
 import { Button } from '../components/Button/button'
 import { useAuth } from '../hooks/useAuth'
 import '../styles/auth.scss'
-
-
+import { ToastContainer } from 'react-toastify';
+import { errorNotification, sucessNotification, warningNotification } from '../utils/toastNotification'
 
 export function Home() {
 
     const history = useHistory();
     const { user, signInWithGoogle } = useAuth();
-    const [roomCode, setRoomCode] = useState('')
+    const [roomCode, setRoomCode] = useState('');
 
     function handleCreateRoom() {
 
@@ -31,20 +31,21 @@ export function Home() {
 
         // check if input is empty
         if (roomCode.trim() === '') {
+            warningNotification('RoomCode has empty!');
             return;
         }
 
         // Get the room with key
         const roomRef = await database.ref(`rooms/${roomCode}`).get();
-        
+
         if (!roomRef.exists()) {
-            alert('Room does not exists')
+            errorNotification('Room does not exists!')
             return;
         }
 
         if (roomRef.val().endedAt) {
-            alert('Room already closed')
-            return
+            errorNotification(`Room was closed`)
+            return;
         }
 
         history.push(`rooms/${roomCode}`)

@@ -4,6 +4,8 @@ import App from './App';
 
 import './services/firebase'
 import './styles/global.scss'
+import './styles/toastNotifications.scss'
+
 
 ReactDOM.render(
   <React.StrictMode>

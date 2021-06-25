@@ -9,6 +9,7 @@ import { useAuth } from '../hooks/useAuth'
 import '../styles/auth.scss'
 import { useState } from 'react'
 import { database } from '../services/firebase'
+import { sucessNotification, warningNotification } from '../utils/toastNotification'
 
 export function NewRoom() {
     const { user } = useAuth();
@@ -20,6 +21,7 @@ export function NewRoom() {
 
         // remove spaces and check if it is empty
         if (newRoom.trim() === '') {
+            warningNotification("newRoom title has empty")
             return;
         }
 
@@ -32,10 +34,9 @@ export function NewRoom() {
             authorId: user?.id,
         })
 
+        sucessNotification(`${newRoom} room successfully created`)
         history.push(`/admin/rooms/${firebaseRoom.key}`)
     }
-
-    console.log(user?.name)
 
     return (
         <div id='page-auth'>
