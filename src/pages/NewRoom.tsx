@@ -4,7 +4,7 @@ import { FormEvent } from 'react'
 import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg'
 
-import { Button } from '../components/Button'
+import { Button } from '../components/Button/button'
 import { useAuth } from '../hooks/useAuth'
 import '../styles/auth.scss'
 import { useState } from 'react'
@@ -32,7 +32,7 @@ export function NewRoom() {
             authorId: user?.id,
         })
 
-        history.push(`/rooms/${firebaseRoom.key}`)
+        history.push(`/admin/rooms/${firebaseRoom.key}`)
     }
 
     console.log(user?.name)

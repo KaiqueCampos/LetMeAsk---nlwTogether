@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes } from 'react'
-import '../styles/button.scss'
+import './styles.scss'
 
 // in addition to the attributes of a button, with & + object we can pass other attributes.
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
