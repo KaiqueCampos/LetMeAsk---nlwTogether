@@ -1,14 +1,13 @@
 import { FormEvent, useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { database } from '../services/firebase'
 import googleIconImg from '../assets/images/google-icon.svg'
 import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg'
 import { Button } from '../components/Button/button'
 import { useAuth } from '../hooks/useAuth'
+import { database } from '../services/firebase'
 import '../styles/auth.scss'
-import { ToastContainer } from 'react-toastify';
-import { errorNotification, sucessNotification, warningNotification } from '../utils/toastNotification'
+import { errorNotification, warningNotification } from '../utils/toastNotification'
 
 export function Home() {
 
