@@ -26,7 +26,7 @@ export function Question({
             {answered: isAnswered},
             {highlighted: isHighLighted && !isAnswered},
         )}>
-            <p>{content}</p>
+            <p style={{color: 'var(--fontColor1)'}}>{content}</p>
             <footer>
                 <div className="user-info">
                     <img src={author.avatar} alt={author.name} />

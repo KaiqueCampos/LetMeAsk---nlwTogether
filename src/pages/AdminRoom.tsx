@@ -3,10 +3,12 @@ import answerImg from '../assets/images/answer.svg';
 import checkImg from '../assets/images/check.svg';
 import deleteImg from '../assets/images/delete.svg';
 import logoImg from '../assets/images/logo.svg';
+import logoDarkImg from '../assets/images/logoDark.svg'
 import { Button } from '../components/Button/button';
 import { Question } from '../components/Question/question';
 import { RoomCode } from '../components/RoomCode/roomCode';
 import { useRoom } from '../hooks/useRoom';
+import { useTheme } from '../hooks/useTheme';
 import { database } from '../services/firebase';
 import '../styles/room.scss';
 import { sucessNotification } from '../utils/toastNotification';
@@ -19,6 +21,7 @@ export function AdminRoom() {
     // const { user } = useAuth()
     const history = useHistory()
     const params = useParams<RoomParams>();
+    const {theme} = useTheme();
 
     const roomId = params.id;
     const { questions, title } = useRoom(roomId)
@@ -55,7 +58,7 @@ export function AdminRoom() {
         <div id="page-room">
             <header>
                 <div className='content'>
-                    <img src={logoImg} alt="LetMeAsk" />
+                    <img src={theme === 'light' ? logoImg : logoDarkImg} alt="LetMeAsk" />
                     <div>
                         <RoomCode code={roomId} />
                         <Button

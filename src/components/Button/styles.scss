@@ -19,9 +19,9 @@
     }
 
     &.outline {
-        background: #fff;
-        border: 1px solid #835afd;
-        color: #835afd;
+        background: var(--buttonColor1);
+        border: 1px solid var(--isOutlineButtonColor);
+        color: var(--isOutlineButtonColor);
     }
 
     &:not(:disabled):hover {

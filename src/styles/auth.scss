@@ -5,7 +5,7 @@
 
     aside {
         flex: 7;
-        background: #835afd;
+        background: var(--illustration);
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -29,6 +29,20 @@
             margin-top: 16px;
             color: #f8f8f8;
         }
+    }
+
+    .toggleButtonTheme{
+        position: absolute;
+        right: 25px;
+        top: 15px;
+
+        padding: 5px 10px;
+        border: 0;
+        border-radius: 10px;
+
+        background-color: #835afd;
+        color: #fff
+
     }
 
     main {
@@ -56,6 +70,7 @@
             font-size: 24px;
             margin: 64px 0 24px;
             font-family: 'Poppins', sans-serif;
+            color: var(--title);
         }
 
         form {
@@ -63,8 +78,13 @@
                 height: 50px;
                 border-radius: 8px;
                 padding: 0 16px;
-                background: #fff;
-                border: 1px solid #a8a8b3;
+                background: var(--secondaryColor);
+                border: 1px solid var(--border);
+                color: var(--fontColor1);
+
+                &::placeholder{
+                    color: var(--placeholder);
+                }
             }
 
             button {

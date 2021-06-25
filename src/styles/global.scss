@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --placeholder: #81838e;
+}
+
 body {
-    background: #f8f8f8;
+    background: var(--primaryColor);
     color: #29292e;
 }
 
@@ -16,6 +20,11 @@ textarea {
     font: 400 16px "Roboto", sans-serif;
 }
 
-button{
+button {
     cursor: pointer;
+
+    &:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
 }

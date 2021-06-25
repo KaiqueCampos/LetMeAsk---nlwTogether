@@ -3,8 +3,8 @@
     border-radius: 8px;
     overflow: hidden;
 
-    background: #fff;
-    border: 1px solid #835afd;
+    background: var(--buttonColor1);
+    border: 1px solid var(--border);
     cursor: pointer;
 
     display: flex;
