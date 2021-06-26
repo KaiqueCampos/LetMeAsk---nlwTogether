@@ -34,6 +34,11 @@ Administrador (Login com google obrigatório para criar sala)
 	 - Questões sem like 
 	 - Questões Respondidas
 
+# Technologies used
+* [Technologies](#technologies)
+ - Typescript
+ - React.js
+ - Firebase
 
 # 💻 How to install?
 ```
