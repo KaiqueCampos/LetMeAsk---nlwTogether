@@ -1,47 +1,6 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-"# LetMeAsk---nlwTogether" 
+![Novo Projeto (48)](https://user-images.githubusercontent.com/70600553/123527725-264f7480-d6b8-11eb-899f-7f0f53d78074.png)
+![Novo Projeto (46)](https://user-images.githubusercontent.com/70600553/123527544-0f5c5280-d6b7-11eb-89e5-779642dd3952.png)
+![Novo Projeto (39)](https://user-images.githubusercontent.com/70600553/123527545-108d7f80-d6b7-11eb-858b-7ac203928593.png)
+![LetMeAsk - Google Chrome 2021-06-26 19-18-44](https://user-images.githubusercontent.com/70600553/123527553-15523380-d6b7-11eb-8b1c-73e66bcb95f0.gif)
+![LetMeAsk - Google Chrome 2021-06-26 19-23-56](https://user-images.githubusercontent.com/70600553/123527554-171bf700-d6b7-11eb-840c-43551cc0e393.gif)
+![LetMeAsk - Google Chrome 2021-06-26 19-07-31](https://user-images.githubusercontent.com/70600553/123527556-17b48d80-d6b7-11eb-80bc-474264fdd626.gif)
