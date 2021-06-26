@@ -1,53 +1,53 @@
 #page-room {
     header {
-        padding: 24px;
+        padding: 1.6rem;
         border-bottom: 1px solid var(--border);
     }
 
     .content {
-        max-width: 1128px;
+        max-width: 72.2rem;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         > img {
-            max-height: 45px;
+            max-height: 3rem;
         }
 
         > div {
             display: flex;
-            gap: 16px;
+            gap: 1rem;
 
             button {
-                height: 40px;
+                height: 2.6rem;
             }
         }
     }
 
     main {
-        max-width: 800px;
+        max-width: 53.3rem;
         margin: 0 auto;
 
         .room-title {
-            margin: 32px 0 24px;
+            margin: 2rem 0 1.6rem;
             display: flex;
             align-items: center;
 
             h1 {
                 font-family: "Poppins", sans-serif;
-                font-size: 24px;
+                font-size: 1.6rem;
                 color: var(--title);
             }
 
             span {
-                margin-left: 16px;
+                margin-left: 1rem;
                 background: #e559f9;
                 border-radius: 9999px;
-                padding: 8px 16px;
+                padding: 0.5rem 1rem;
                 color: #fff;
                 font-weight: 500;
-                font-size: 14px;
+                font-size: 1rem;
             }
         }
 
@@ -55,28 +55,28 @@
             textarea {
                 width: 100%;
                 border: 0;
-                padding: 16px;
+                padding: 1rem;
                 border-radius: 8px;
                 background: var(--questionContainer);
                 color: var(--fontColor1);
                 box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
                 resize: vertical;
-                min-height: 130px;
+                min-height: 8.5rem;
             }
 
             .form-footer {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin-top: 16px;
+                margin-top: 1rem;
 
                 .user-info {
                     display: flex;
                     align-items: center;
 
                     img {
-                        width: 32px;
-                        height: 32px;
+                        width: 2rem;
+                        height: 2rem;
                         border-radius: 50%;
                     }
 
@@ -84,21 +84,21 @@
                         margin-left: 8px;
                         color: var(--title);
                         font-weight: 500;
-                        font-size: 14px;
+                        font-size: 1rem;
                     }
                 }
 
                 > span {
-                    font-size: 14px;
+                    font-size: 1rem;
                     color: #737380;
                     font-weight: 500;
 
                     button {
                         background: transparent;
                         border: 0;
-                        color: #6A45D8;
+                        color: #6a45d8;
                         text-decoration: underline;
-                        font-size: 14px;
+                        font-size: 1rem;
                         font-weight: 500;
                         cursor: pointer;
                     }
@@ -107,7 +107,16 @@
         }
 
         .question-list {
-            margin-top: 32px;
+            margin-top: 2rem;
         }
     }
 }
+
+@media (max-width: 1000px) {
+    #page-room {
+        main {
+            width: 90%;
+        }
+    }
+}
+

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 97.5%
+}
+
 body {
     background: var(--primaryColor);
     color: #29292e;
@@ -13,7 +17,7 @@ body,
 input,
 button,
 textarea {
-    font: 400 16px "Roboto", sans-serif;
+    font: 400 1rem "Roboto", sans-serif;
 }
 
 button {

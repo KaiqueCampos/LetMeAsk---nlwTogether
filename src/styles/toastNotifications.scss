@@ -1,14 +1,34 @@
 #sucessNotification {
-    font: 400 16px "Roboto", sans-serif;
-    background: #4CDF2E;
+    font: 400 1rem "Roboto", sans-serif;
+    background: #4cdf2e;
 }
 
 #errorNotification {
-    font: 400 16px "Roboto", sans-serif;
-    background: #DA4040;
+    font: 400 1rem "Roboto", sans-serif;
+    background: #da4040;
 }
 
-#warningNotification{
-    font: 400 16px "Roboto", sans-serif;
-    background: #E49316;
+#warningNotification {
+    font: 400 1rem "Roboto", sans-serif;
+    background: #e49316;
+}
+
+@media (max-width: 490px) {
+    #sucessNotification {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #errorNotification {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #warningNotification {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
 }

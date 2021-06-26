@@ -2,14 +2,14 @@
     background: var(--questionContainer);
     border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-    padding: 23px;
+    padding: 1.5rem;
 
     & + .question {
         margin-top: 8px;
     }
 
     &:last-child{
-        margin-bottom: 150px;
+        margin-bottom: 10rem;
     }
 
     &.highlighted {
@@ -33,7 +33,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 24px;
+        margin-top: 1.5rem;
 
         .user-info {
             display: flex;
@@ -55,7 +55,7 @@
 
         > div {
             display: flex;
-            gap: 16px;
+            gap: 1rem;
         }
 
         button {
@@ -64,7 +64,7 @@
 
             &.like-button {
                 display: flex;
-                gap: 8px;
+                gap: 0.5rem;
                 align-items: flex-end;
                 color: #737380;
                 transition: filter 0.2s;

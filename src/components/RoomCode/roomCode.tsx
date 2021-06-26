@@ -10,7 +10,7 @@ export function RoomCode(props: RoomCodeProps) {
 
     function copyRoomCodeToClipBoard() {
         navigator.clipboard.writeText(props.code)
-        sucessNotification("Copy")
+        sucessNotification("Room code copied")
     }
 
     return (
