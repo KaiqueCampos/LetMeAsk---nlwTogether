@@ -2,7 +2,9 @@
     height: 50px;
     border-radius: 8px;
     font-weight: 500;
-    background: #835afd;
+    background: linear-gradient(89.89deg, #6A45D8 3.94%, rgba(214, 71, 235, 0.79) 97.14%);
+    box-shadow: 0px 5px 20px rgba(107, 66, 225, 0.7);
+    
     color: #fff;
     padding: 0 32px;
 
@@ -19,7 +21,7 @@
     }
 
     &.outline {
-        background: var(--buttonColor1);
+        background: var(--primaryColor);
         border: 1px solid var(--isOutlineButtonColor);
         color: var(--isOutlineButtonColor);
     }

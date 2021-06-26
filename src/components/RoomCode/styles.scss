@@ -3,15 +3,16 @@
     border-radius: 8px;
     overflow: hidden;
 
-    background: var(--buttonColor1);
-    border: 1px solid var(--border);
+    background: var(--primaryColor);
+    border: 1px solid var(--isOutlineButtonColor);
+    color: var(--isOutlineButtonColor);
     cursor: pointer;
 
     display: flex;
 
     div {
         height: 40px;
-        background: #835afd;
+        background: #6A45D8;
         padding: 0 12px;
         display: flex;
         justify-content: center;

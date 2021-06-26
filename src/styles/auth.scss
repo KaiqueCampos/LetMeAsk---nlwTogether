@@ -31,7 +31,7 @@
         }
     }
 
-    .toggleButtonTheme{
+    .toggleButtonTheme {
         position: absolute;
         right: 25px;
         top: 15px;
@@ -40,9 +40,11 @@
         border: 0;
         border-radius: 10px;
 
-        background-color: #835afd;
-        color: #fff
+        font-weight: 500;
 
+        background: linear-gradient(89.89deg, #6a45d8 3.94%, rgba(214, 71, 235, 0.79) 97.14%);
+        box-shadow: 0px 5px 20px rgba(107, 66, 225, 0.7);
+        color: #fff;
     }
 
     main {
@@ -66,10 +68,10 @@
             align-items: center;
         }
 
-        h2{
+        h2 {
             font-size: 24px;
             margin: 64px 0 24px;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
             color: var(--title);
         }
 
@@ -82,8 +84,8 @@
                 border: 1px solid var(--border);
                 color: var(--fontColor1);
 
-                &::placeholder{
-                    color: var(--placeholder);
+                &::placeholder {
+                    color: #81838e;
                 }
             }
 
@@ -97,24 +99,24 @@
             }
         }
 
-        p{
+        p {
             font-size: 14px;
             color: #737380;
             margin: 60px;
 
-            a{
+            a {
                 color: #e559f9;
             }
         }
     }
 }
 
-.create-room{
+.create-room {
     margin-top: 64px;
     height: 50px;
     border-radius: 8px;
     font-weight: 500;
-    background: #ea4335;
+    background: var(--googleButton);
     color: #fff;
 
     display: flex;
@@ -125,11 +127,11 @@
     border: 0;
     transition: filter 0.2s;
 
-    img{
+    img {
         margin-right: 8px;
     }
 
-    &:hover{
+    &:hover {
         filter: opacity(0.9);
     }
 }

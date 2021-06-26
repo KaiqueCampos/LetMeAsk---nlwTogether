@@ -17,10 +17,10 @@ type ThemesAttributes = {
     '--fontColor2': string,
     '--border': string,
     '--title': string,
-    '--buttonColor1': string,
     '--isOutlineButtonColor': string,
     '--questionIsAnswered': string,
-    '--isHighlighted': string
+    '--isHighlighted': string,
+    '--googleButton': string,
 }
 
 export const ThemeContext = createContext({} as ThemeContextProps);
@@ -63,29 +63,29 @@ export function ThemeContextProvider({ children }: ThemeContextProviderProps) {
             dark: {
                 '--primaryColor': '#191622',
                 '--secondaryColor': '#44475a',
-                '--illustration': '#44475a',
+                '--illustration': '#100d1a',
                 '--fontColor1': '#fff',
                 '--fontColor2': '#81838e',
                 '--border': '#44475a',
                 '--title': '#44475a',
-                '--buttonColor1': '#44475a',
-                '--isOutlineButtonColor': '#81838e',
+                '--isOutlineButtonColor': '#6A45D8',
                 '--questionIsAnswered': '#201e29',
-                '--isHighlighted': '#271c47'
+                '--isHighlighted': '#271c47',
+                '--googleButton': '#6A45D8'
             },
 
             light: {
                 '--primaryColor': '#f8f8f8',
                 '--secondaryColor': '#fefefe',
-                '--illustration': '#835afd',
+                '--illustration': '#6A45D8',
                 '--fontColor1': '#29292e',
                 '--fontColor2': '#fff',
                 '--border': '#a8a8b3',
                 '--title': '#29292e',
-                '--buttonColor1': '#fff',
-                '--isOutlineButtonColor': '#835afd',
+                '--isOutlineButtonColor': '#6A45D8',
                 '--questionIsAnswered': '#dbdcdd',
-                '--isHighlighted': '#f4f0ff'
+                '--isHighlighted': '#f4f0ff',
+                '--googleButton': '#ea4335'
 
             },
         }
