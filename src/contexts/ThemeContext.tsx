@@ -21,6 +21,7 @@ type ThemesAttributes = {
     '--questionIsAnswered': string,
     '--isHighlighted': string,
     '--googleButton': string,
+    '--questionContainer': string,
 }
 
 export const ThemeContext = createContext({} as ThemeContextProps);
@@ -70,7 +71,8 @@ export function ThemeContextProvider({ children }: ThemeContextProviderProps) {
                 '--isOutlineButtonColor': '#6A45D8',
                 '--questionIsAnswered': '#201e29',
                 '--isHighlighted': '#271c47',
-                '--googleButton': '#6A45D8'
+                '--googleButton': '#6A45D8',
+                '--questionContainer': '#100d1a'
             },
 
             light: {
@@ -84,7 +86,8 @@ export function ThemeContextProvider({ children }: ThemeContextProviderProps) {
                 '--isOutlineButtonColor': '#6A45D8',
                 '--questionIsAnswered': '#dbdcdd',
                 '--isHighlighted': '#f4f0ff',
-                '--googleButton': '#ea4335'
+                '--googleButton': '#ea4335',
+                '--questionContainer': '#fefefe'
 
             },
         }
