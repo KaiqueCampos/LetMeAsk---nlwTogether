@@ -57,8 +57,16 @@ export function useRoom(roomId: string) {
                 }
             })
 
+            const orderedQuestions = parsedQuestions.sort(function (a, b) {
+
+                let question1 = a.isAnswered ? -10 : (a.isHighLighted ? (a.likeCount > b.likeCount ? 2 : 1) : (a.likeCount > b.likeCount ? 0.5 : 0))
+                let question2 = b.isAnswered ? -10 : (b.isHighLighted ? (b.likeCount > a.likeCount ? 2 : 1) : (b.likeCount > a.likeCount ? 0.5 : 0));
+
+                return question2 - question1;
+            });
+
             setTitle(databaseRoom.title)
-            setQuestions(parsedQuestions)
+            setQuestions(orderedQuestions)
         })
 
         return () => {

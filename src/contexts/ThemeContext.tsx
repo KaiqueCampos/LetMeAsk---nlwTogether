@@ -33,7 +33,6 @@ export function ThemeContextProvider({ children }: ThemeContextProviderProps) {
 
     const [theme, setTheme] = useState<ThemeProps>('light');
     const [buttonThemeState, setButtonThemeState] = useState(false)
-    console.log(theme)
 
     function toggleTheme(currentTheme: string) {
         localStorage.setItem('theme', currentTheme === 'light' ? 'dark' : 'light');
