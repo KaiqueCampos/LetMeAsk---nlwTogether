@@ -49,7 +49,7 @@ $ cd LetMeAsk---nlwTogether
 
 # Instale as dependências
 
-$ yarn add
+$ yarn install
 # or
 $ npm install
 
